@@ -5,11 +5,6 @@ import (
 	"net/http"
 )
 
-type ReadWriter struct {
-	io.Reader
-	io.Writer
-}
-
 func Pipe(a, b io.ReadWriter) error {
 	ch := make(chan error)
 
