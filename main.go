@@ -17,7 +17,7 @@ func main() {
 	flag.StringVar(&opts.Listen, "listen", "127.0.0.1:6060", "listening address")
 	flag.StringVar(&opts.Connect, "connect", "", "connect address")
 	flag.StringVar(&opts.ServerName, "servername", "", "remote tls servername")
-	flag.BoolVar(&opts.InsecureSkipVerify, "insecure", false, "skip tls verify (insecure)")
+	flag.BoolVar(&opts.InsecureSkipVerify, "insecure", false, "skip tls verify")
 	flag.Parse()
 
 	if opts.Connect == "" {
